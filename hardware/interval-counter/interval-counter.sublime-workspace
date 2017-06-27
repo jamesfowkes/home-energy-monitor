@@ -1,0 +1,1331 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ac",
+				"actual"
+			],
+			[
+				"time",
+				"timedelta_to_seconds"
+			],
+			[
+				"get",
+				"get_timestamp"
+			],
+			[
+				"di",
+				"diff_in_seconds"
+			],
+			[
+				"ex",
+				"expected_intervals"
+			],
+			[
+				"actua",
+				"actual_timestamps"
+			],
+			[
+				"in",
+				"interval"
+			],
+			[
+				"test",
+				"test_logger"
+			],
+			[
+				"actu",
+				"actual"
+			],
+			[
+				"exp",
+				"expected_timestamps"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"digital",
+				"digitalWrite\tArduino digitalWrite"
+			],
+			[
+				"rand",
+				"randint"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"tim",
+				"timestamps"
+			],
+			[
+				"fa",
+				"fake_pulse"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"handle",
+				"handle_timestamp"
+			],
+			[
+				"s_tim",
+				"s_time_task"
+			],
+			[
+				"s_",
+				"s_interval_buffer"
+			],
+			[
+				"Ri",
+				"RingbufTest"
+			],
+			[
+				"ser",
+				"serial"
+			],
+			[
+				"STEP",
+				"STEPS_PER_REVOLUTION"
+			],
+			[
+				"cli",
+				"ClientID"
+			],
+			[
+				"Add",
+				"AddressNumber"
+			],
+			[
+				"to",
+				"total_amount"
+			],
+			[
+				"t",
+				"total_hours"
+			],
+			[
+				"tota",
+				"total_amount"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"parse",
+				"parse_monthly_job_string"
+			],
+			[
+				"url",
+				"url_processor"
+			],
+			[
+				"jo",
+				"job_name"
+			],
+			[
+				"de",
+				"desc"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"task",
+				"task_str"
+			],
+			[
+				"name",
+				"namedtuple"
+			],
+			[
+				"st",
+				"startdate"
+			],
+			[
+				"s",
+				"startdate"
+			],
+			[
+				"Test",
+				"TestJobName4"
+			],
+			[
+				"Monthly",
+				"MonthlyInvoice"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"date",
+				"date_to_search"
+			],
+			[
+				"on",
+				"oneoffs"
+			],
+			[
+				"get_",
+				"get_module_logger"
+			],
+			[
+				"ass",
+				"assertEqual"
+			],
+			[
+				"job",
+				"jobs_for_abc"
+			],
+			[
+				"create",
+				"create_engine"
+			],
+			[
+				"boar",
+				"board_lists"
+			],
+			[
+				"geg",
+				"get_module_logger"
+			],
+			[
+				"tok",
+				"tokens"
+			],
+			[
+				"expected",
+				"expected_tokens"
+			],
+			[
+				"f",
+				"filter"
+			],
+			[
+				"ACt",
+				"Active"
+			],
+			[
+				"CL",
+				"ClientID"
+			],
+			[
+				"Month",
+				"MonthlyInvoice"
+			],
+			[
+				"Mon",
+				"MonthlyInvoice"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"Mont",
+				"MonthlyInvoices"
+			],
+			[
+				"this",
+				"this_task_date"
+			],
+			[
+				"Da",
+				"DefaultRate"
+			],
+			[
+				"co",
+				"Column"
+			],
+			[
+				"logg",
+				"get_module_logger"
+			],
+			[
+				"all",
+				"all_previous"
+			],
+			[
+				"month",
+				"month_number"
+			],
+			[
+				"en",
+				"engine"
+			],
+			[
+				"num",
+				"numeric_id"
+			],
+			[
+				"inv",
+				"invoices"
+			],
+			[
+				"from",
+				"fromtimestamp"
+			],
+			[
+				"stat",
+				"staticmethod"
+			],
+			[
+				"Client",
+				"ClientID"
+			],
+			[
+				"one",
+				"oneoff"
+			],
+			[
+				"dat",
+				"date"
+			],
+			[
+				"Cliet",
+				"ClientID"
+			],
+			[
+				"active",
+				"active_only"
+			],
+			[
+				"nu",
+				"numeric_id"
+			],
+			[
+				"quer",
+				"query_rtn"
+			],
+			[
+				"qu",
+				"query_rtn"
+			],
+			[
+				"q",
+				"query_rtn"
+			],
+			[
+				"da",
+				"date_to_search"
+			],
+			[
+				"k",
+				"kwargs"
+			],
+			[
+				"oneo",
+				"oneoff"
+			],
+			[
+				"class",
+				"classmethod"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"cl",
+				"client_id"
+			],
+			[
+				"oneof",
+				"oneoffs"
+			],
+			[
+				"uni",
+				"unique_months"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"o",
+				"OperationalError"
+			],
+			[
+				"clie",
+				"client_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "interval-counter.ino",
+			"settings":
+			{
+				"buffer_size": 2779,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "time.h",
+			"settings":
+			{
+				"buffer_size": 251,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "time.cpp",
+			"settings":
+			{
+				"buffer_size": 1178,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/james/code/home-energy-monitor/hardware/HardwareInterface.py",
+			"settings":
+			{
+				"buffer_size": 1806,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/james/code/home-energy-monitor/hardware/HardwareInterfaceTest.py",
+			"settings":
+			{
+				"buffer_size": 5280,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rtc.cpp",
+			"settings":
+			{
+				"buffer_size": 274,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rtc.h",
+			"settings":
+			{
+				"buffer_size": 59,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 32.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/james/code/interval-counter",
+		"/home/james/code/home-energy-monitor",
+		"/home/james/code/home-energy-monitor/hardware",
+		"/home/james/code/Libs/Generics/ringbuf"
+	],
+	"file_history":
+	[
+		"/home/james/code/Libs/Generics/ringbuf/ringbuf.h",
+		"/home/james/code/interval-counter/interval.cpp",
+		"/home/james/code/interval-counter/interval.h",
+		"/home/james/code/home-energy-monitor/hardware/logtest.py",
+		"/home/james/code/interval-counter/python/HardwareInterface.py",
+		"/home/james/code/interval-counter/python/HardwareInterface.cpp",
+		"/home/james/code/returnzero-site/style.css",
+		"/home/james/code/returnzero-site/index.html",
+		"/home/james/code/return-zero-site/index.html",
+		"/home/james/code/returnzero-site/portfolio.html",
+		"/home/james/code/return-zero-site/static/portfolio.css",
+		"/home/james/code/interval-counter/interval-counter.ino",
+		"/home/james/code/interval-counter/time.h",
+		"/home/james/code/interval-counter/time.cpp",
+		"/home/james/code/interval-counter/buffer.h",
+		"/home/james/code/interval-counter/buffer.cpp",
+		"/home/james/code/Libs/Generics/KeyboardSupport.c",
+		"/home/james/code/Libs/Generics/ringbuf.h",
+		"/home/james/code/Libs/Generics/ringbuf.c",
+		"/home/james/code/Libs/Generics/USB.h",
+		"/home/james/code/Libs/LUFA/LUFA/Drivers/USB/Class/Common/HIDClassCommon.h",
+		"/home/james/code/Libs/LUFA/LUFA/Drivers/USB/USB.h",
+		"/home/james/code/Libs/Generics/KeyboardSupport.h",
+		"/home/james/Arduino/libraries/Generics/library.properties",
+		"/home/james/code/Libs/Generics/Tests/ringbuf/ringbuf.test.cpp",
+		"/home/james/code/Libs/Generics/Tests/button/button.test.cpp",
+		"/home/james/code/Libs/Generics/Tests/SConstruct",
+		"/home/james/code/Libs/Generics/Tests/ringbuf/SConscript",
+		"/home/james/code/thedistance-hardware-demo/application/src/Tests/SConstruct",
+		"/home/james/code/thedistance-hardware-demo/application/src/Tests/endpoint.test.cpp",
+		"/home/james/code/Libs/Generics/Tests/ringbuf/ringbuf_test_Runner.c",
+		"/home/james/code/Libs/Generics/Tests/ringbuf/ringbuf_test.c",
+		"/home/james/code/Libs/Generics/Tests/button/button_test.c",
+		"/home/james/code/Libs/Generics/Tests/button/button_test_Runner.c",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/controller.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/adc.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/adc.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/battery.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/battery.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/battery_leds.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/battery_leds.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/controller.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/speed_leds.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/speed_leds.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/switches.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/switches.h",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/util.cpp",
+		"/home/james/code/asap-watercrafts/asap-watercraft-user-board/util.h",
+		"/tmp/sublime-sftp-browse-1492336314/bedroom-pi-zero.json/home/pi/rgblamp/config-site/run.py",
+		"/tmp/sublime-sftp-browse-1492336256/bedroom-pi-zero.json/home/pi/rgblamp/lamp-controller/run.py",
+		"/tmp/sublime-sftp-browse-1492336281/bedroom-pi-zero.json/home/pi/rgblamp/application/application.py",
+		"/tmp/sublime-sftp-browse-1492336862/bedroom-pi-zero.json/home/pi/rgblamp/lamp-controller/lampcontroller/api.py",
+		"/tmp/sublime-sftp-browse-1492336325/bedroom-pi-zero.json/home/pi/rgblamp/lamp/lamp.py",
+		"/tmp/sublime-sftp-browse-1492336294/bedroom-pi-zero.json/home/pi/rgblamp/button-reader/run.py",
+		"/tmp/sublime-sftp-browse-1492336006/bedroom-pi-zero.json/home/pi/rgblamp/rgblamp-application.sh",
+		"/home/james/.config/sublime-text-3/Packages/User/sftp_servers/bedroom-pi-zero.json",
+		"/tmp/sublime-sftp-browse-1492335460/bedroom-pi-zero.json/home/pi/rgblamp/rgblamp-controller-server.sh",
+		"/tmp/sublime-sftp-browse-1492335452/bedroom-pi-zero.json/home/pi/rgblamp/rgblamp-config-server.sh",
+		"/tmp/sublime-sftp-browse-1492335438/bedroom-pi-zero.json/home/pi/rgblamp/rgblamp-button-server.sh",
+		"/tmp/sublime-sftp-browse-1492335404/bedroom-pi-zero.json/home/pi/rgblamp/rgblamp-application.sh",
+		"/home/james/code/dual-shaft-stepper/test/test.ino",
+		"/home/james/code/dual-shaft-stepper/test/src/test.ino",
+		"/home/james/code/TimeTracker/TimeTracker/static/invoice.css",
+		"/home/james/code/TimeTracker/TimeTracker/db.py",
+		"/home/james/code/TimeTracker/TimeTracker/templates/tables.html",
+		"/home/james/code/TimeTracker/TimeTracker/templates/tasks.template.html",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/monthly_task_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/views/task_views.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/monthly_invoice_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/views/client_views.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/trello.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/task_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/views/invoice_views.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/job_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/Tests/test_job_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/Tests/test_trello_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/oneoff_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/views/job_views.py",
+		"/home/james/code/TimeTracker/run.py",
+		"/home/james/code/TimeTracker/TimeTracker/__init__.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/invoice_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/client_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/address_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker.cfg",
+		"/home/james/code/TimeTracker/README.md",
+		"/home/james/code/TimeTracker/tracker.db.bak",
+		"/home/james/code/TimeTracker/TimeTracker.sublime-project",
+		"/home/james/code/TimeTracker/TimeTracker/controllers/Tests/test_oneoff_controller.py",
+		"/home/james/code/TimeTracker/TimeTracker/templates/oneoff.template.pdf.html",
+		"/home/james/code/TimeTracker/TimeTracker/templates/forms.html",
+		"/home/james/code/TimeTracker/TimeTracker/templates/invoice.template.html",
+		"/home/james/code/TimeTracker/TimeTracker/static/view.css",
+		"/home/james/code/TimeTracker/TimeTracker/templates/Addresses.csv",
+		"/media/james/boot/config.txt",
+		"/media/james/boot/cmdline.txt",
+		"/home/james/Downloads/AmarinoLibrary_v0_55/at/abraxas/amarino/Amarino.java",
+		"/home/james/Downloads/AmarinoLibrary_v0_55/at/abraxas/amarino/AmarinoIntent.java",
+		"/home/james/Downloads/AmarinoLibrary_v0_55/at/abraxas/amarino/AmarinoIntent.class",
+		"/home/james/Hackspace_Note_Box.dxf",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/client_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/address_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/monthly_invoice_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/invoice_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/oneoff_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/job_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/task_controller.py",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/Addresses.csv",
+		"/home/james/Github/TimeTracker/instance/invoice-data.yaml",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/tables.html",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/tasks.template.html",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/jobs.template.html",
+		"/home/james/Github/TimeTracker/TimeTracker/views/job_views.py",
+		"/home/james/Github/TimeTracker/TimeTracker/views/task_views.py",
+		"/home/james/Github/TimeTracker/TimeTracker/controllers/trello.py",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/forms.html",
+		"/home/james/Github/TimeTracker/TimeTracker/static/view.css",
+		"/home/james/Github/TimeTracker/TimeTracker/views/invoice_views.py",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/invoices.template.html",
+		"/home/james/Github/TimeTracker/TimeTracker/views/client_views.py",
+		"/home/james/Github/TimeTracker/TimeTracker/__init__.py",
+		"/home/james/Github/TimeTracker/TimeTracker.sublime-project",
+		"/home/james/Github/TimeTracker/TimeTracker/views/__init__.py",
+		"/home/james/Github/TimeTracker/run.py",
+		"/home/james/Documents/Electronics/Projects/quad-serial/quad-serial-F.Cu.gbr",
+		"/home/james/Github/TimeTracker/TimeTracker/static/invoices.js",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/view.template.html",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/clients.template.html",
+		"/home/james/Github/TimeTracker/TimeTracker/templates/debug.args.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"/home/james/code/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.jst",
+			"/home/james/code/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.js",
+			"/home/james/Github/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.js",
+			"/home/james/Documents/GitHub/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.js",
+			"/home/james/Documents/Github/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.js",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*,-jquery.js",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~,-*.html~,-*.sublime*",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~,'*.html~,-*.sublime*",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~,-*.sublime*",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~,*.sublime*",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker,-*.py~",
+			"/home/james/Documents/Code/TimeTracker/TimeTracker"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"byte",
+			"1000000",
+			"set_timestamp",
+			"actual",
+			"run_timestamp_wait_test",
+			"run_set_timestamp_test",
+			"run_timestamp_tests",
+			"16",
+			"run_pulse_test",
+			"run_pulse_tests",
+			"actual_timestamps",
+			"millis()",
+			"100",
+			"uint16_t",
+			"time.m",
+			"time.s",
+			"s",
+			"interval_on_pulse",
+			"run_set_timestamp_test_logger",
+			"print",
+			"HardwareInterface",
+			"p_timestamp",
+			"timestamp",
+			"rx_serial_buffer",
+			"interval_on_pulse",
+			"well well-lg",
+			"s_last_pulse_time",
+			"Serial.print(",
+			"rx_serial_buffer",
+			"s_time",
+			"handle_query",
+			"ok = ",
+			"tx_serial_buffer",
+			"_INTERVAL_H_",
+			"this_interval",
+			"interval",
+			"millis();",
+			"U,",
+			"U",
+			"(uint16_t)",
+			"U,",
+			"U",
+			"uint8_t",
+			"buffer.head);",
+			"TEST_ASSERT_EQUAL",
+			"CPPUNIT_TEST",
+			"RingBufInit",
+			"test_",
+			"()",
+			"void",
+			"Endpoint",
+			"button",
+			"position",
+			"this",
+			"serial_buffer",
+			"struct serial_buffer& rx_serial_buffer",
+			"s_incoming",
+			"serial_buffer)",
+			"struct serial_buffer",
+			"SERIAL_BUFFER",
+			"PORTB",
+			"debug",
+			"start",
+			"s_inner_motor",
+			"FULL4WIRE",
+			"flask.ext",
+			"delete",
+			"del",
+			"Task.",
+			"TaskCollection",
+			"Task",
+			"Task(",
+			"Task",
+			"task",
+			"Tasks",
+			"trello",
+			"delete",
+			"activate_job",
+			"deactivate",
+			"self.db_fd",
+			"copy",
+			"tracker.db",
+			"#",
+			"add_db",
+			"db.create",
+			"Hours",
+			"hours",
+			"self.Hours",
+			"Hours",
+			"hours",
+			"Hours",
+			".hours",
+			"period",
+			"p.h.",
+			"option",
+			"Rate (£)",
+			"TaskCollection",
+			"inline",
+			".inline",
+			"TaskCollection",
+			".csv",
+			"address",
+			"ClientID",
+			"address",
+			",1,",
+			"1",
+			",",
+			"\t\"",
+			"tuple_to_date",
+			">/<",
+			".delete",
+			"Start",
+			"Job",
+			"Totals",
+			"ToTransfer",
+			"url_for",
+			"db.session()",
+			"get_module_logger",
+			"add_new_job",
+			"render_new_job_form",
+			"tasks_to_add",
+			"Parsing",
+			"parse_oneoff_task_string",
+			"OneOffTask",
+			"parse_oneoff_task_string",
+			"OneOffTask",
+			"generate_oneoff_task_info",
+			"get_for_job"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cls.query",
+			"get_client_data_for_month_for_render",
+			"get_monthly_invoices_for_client",
+			"format_address_for_display"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "interval-counter.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2590,
+								2590
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "time.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "time.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/james/code/home-energy-monitor/hardware/HardwareInterface.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1232
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/james/code/home-energy-monitor/hardware/HardwareInterfaceTest.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4349,
+								4349
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1678.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "rtc.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "rtc.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 282.0
+	},
+	"output.sftp":
+	{
+		"height": 167.0
+	},
+	"pinned_build_system": "",
+	"project": "interval-counter.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"TimeTracker/static/invoice.css"
+			],
+			[
+				"tables",
+				"TimeTracker/templates/tables.html"
+			],
+			[
+				"task",
+				"TimeTracker/templates/tasks.template.html"
+			],
+			[
+				"template.pdf",
+				"TimeTracker/templates/oneoff.template.pdf.html"
+			],
+			[
+				"client_",
+				"TimeTracker/views/client_views.py"
+			],
+			[
+				"trello",
+				"TimeTracker/controllers/trello.py"
+			],
+			[
+				"one",
+				"TimeTracker/controllers/oneoff_controller.py"
+			],
+			[
+				"job",
+				"TimeTracker/views/job_views.py"
+			],
+			[
+				"client",
+				"TimeTracker/views/client_views.py"
+			],
+			[
+				"tr",
+				"TimeTracker/trellotasks.py"
+			],
+			[
+				"ta",
+				"templates/tables.html"
+			],
+			[
+				"templa",
+				"templates/jobs.template.html"
+			],
+			[
+				"jobs",
+				"templates/jobs.template.html"
+			],
+			[
+				"form",
+				"templates/forms.html"
+			],
+			[
+				"template",
+				"templates/jobs.template.html"
+			],
+			[
+				"clien",
+				"client_views.py"
+			],
+			[
+				".html",
+				"templates/invoices.template.html"
+			],
+			[
+				".js",
+				"static/invoices.js"
+			],
+			[
+				"invoic",
+				"invoice_views.py"
+			],
+			[
+				"oneoff",
+				"templates/oneoff.template.html"
+			],
+			[
+				"inv",
+				"invoice_controller.py"
+			],
+			[
+				"table",
+				"templates/tables.html"
+			],
+			[
+				"invoice",
+				"invoice_controller.py"
+			],
+			[
+				"on",
+				"templates/oneoff.template.html"
+			],
+			[
+				"invoi",
+				"invoice_views.py"
+			],
+			[
+				"month",
+				"monthly_invoice_controller.py"
+			],
+			[
+				"db",
+				"db.py"
+			],
+			[
+				"jo",
+				"job_views.py"
+			],
+			[
+				"task_",
+				"task_job_controller.py"
+			],
+			[
+				"tem",
+				"templates/invoices.template.html"
+			],
+			[
+				"dis",
+				"display_helper.py"
+			],
+			[
+				"displa",
+				"display_helper.py"
+			],
+			[
+				"mon",
+				"monthly_invoice_controller.py"
+			],
+			[
+				".py",
+				"__init__.py"
+			],
+			[
+				"view",
+				"templates/view.template.html"
+			],
+			[
+				"con",
+				"task_job_controller.py"
+			],
+			[
+				"invoices",
+				"invoice_views.py"
+			],
+			[
+				"clie",
+				"client_controller.py"
+			],
+			[
+				"invo",
+				"invoice_controller.py"
+			],
+			[
+				"app",
+				"display_helper.py"
+			],
+			[
+				"tempalte",
+				"templates/tasks.template.html"
+			],
+			[
+				"tasks",
+				"templates/tasks.template.html"
+			],
+			[
+				"pdf.",
+				"templates/invoice.template.pdf.html"
+			],
+			[
+				"jobs.",
+				"templates/jobs.template.html"
+			],
+			[
+				"cli",
+				"client_controller.py"
+			],
+			[
+				"contro",
+				"client_controller.py"
+			],
+			[
+				"templ",
+				"templates/invoice.template.html"
+			],
+			[
+				"temp",
+				"templates/invoices.template.html"
+			],
+			[
+				"pdf.html",
+				"templates/invoice.template.pdf.html"
+			],
+			[
+				"helper",
+				"display_helper.py"
+			],
+			[
+				"contr",
+				"task_job_controller.py"
+			],
+			[
+				"view.",
+				"templates/view.template.html"
+			],
+			[
+				"",
+				"__init__.py"
+			],
+			[
+				"controll",
+				"task_job_controller.py"
+			],
+			[
+				"in",
+				"client_views.py"
+			],
+			[
+				"jobs.t",
+				"templates/jobs.template.html"
+			],
+			[
+				"_con",
+				"task_job_controller.py"
+			],
+			[
+				"tas",
+				"task_views.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 324.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
