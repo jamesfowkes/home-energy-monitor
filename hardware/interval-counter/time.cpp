@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <TaskAction.h>
 
 #include "time.h"
 
@@ -44,15 +43,6 @@ static void time_add_ms(TIME& time, uint16_t ms)
 	}
 }
 
-static void time_task_fn(TaskAction * this_task)
-{
-	cli();
-	(void)this_task;
-	time_add_ms(s_time, 11);
-	sei();
-}
-static TaskAction s_time_task(time_task_fn, 10, INFINITE_TICKS);
-
 void time_set(TIME& time)
 {
 	s_time.h = time.h;
@@ -76,5 +66,5 @@ void time_print(TIME& time, char * buf)
 
 void time_tick()
 {
-	s_time_task.tick();
+	time_add_ms(s_time, 1);
 }

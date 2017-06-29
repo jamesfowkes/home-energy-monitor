@@ -4,8 +4,11 @@
 class SerialBuffer
 {
 public:
-	SerialBuffer(char * buf, uint8_t index, uint8_t length) :
-		m_buf(buf), m_index(index), m_length(length) {}
+	SerialBuffer() : m_buf(NULL), m_index(0), m_length(0) {}
+	SerialBuffer(char * buf, uint8_t length) :
+		m_buf(buf), m_index(0), m_length(length) {}
+
+	void init(char * buf, uint8_t length);
 
 	void add_to_buffer(char c);
 	void reset();

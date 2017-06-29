@@ -1,6 +1,14 @@
 #include <stdint.h>
+#include <stdlib.h>
 
 #include "buffer.h"
+
+void SerialBuffer::init(char * buf, uint8_t length)
+{
+	this->m_buf = buf;
+	this->m_index = 0;
+	this->m_length = length;
+}
 
 void SerialBuffer::reset()
 {

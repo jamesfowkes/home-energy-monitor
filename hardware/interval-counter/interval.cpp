@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include <avr/interrupt.h>
 
 #include <stdio.h>
 #include <string.h>
@@ -6,23 +6,21 @@
 #include "ringbuf.h"
 #include "time.h"
 
-static char s_intervals[32*16];
+static char s_intervals[16][16];
 
-static RING_BUFFER s_interval_buffer;
+static RingBuffer<char[16]> s_interval_buffer(s_intervals, 16, true);
 
 static TIME s_last_pulse_time;
 static bool s_pending_timestamp = false;
 
 void interval_init()
 {
-	Ringbuf_Init(&s_interval_buffer, (RINGBUF_DATA)s_intervals, 16, 32, true);
 }
 
 bool interval_fifo_pop(char * buf)
 {
-	char * interval = (char*)Ringbuf_Pop_Front(&s_interval_buffer);
-
-	if (!interval) { return false; }
+	char interval[16];
+	if (s_interval_buffer.pop_front(interval)) { return false; }
 
 	strncpy(buf, interval, 16);
 
@@ -31,7 +29,7 @@ bool interval_fifo_pop(char * buf)
 
 uint8_t interval_fifo_count()
 {
-	return Ringbuf_Count(&s_interval_buffer);
+	return s_interval_buffer.count();
 }
 
 void interval_tick()
@@ -41,12 +39,24 @@ void interval_tick()
 	{
 		time_print(s_last_pulse_time, interval);
 
-		Ringbuf_Put(&s_interval_buffer, (RINGBUF_DATA)interval);
+		s_interval_buffer.push_back(interval);
+
 		s_pending_timestamp = false;
 	}
 }
 
-void interval_on_pulse()
+void interval_trigger_pulse()
+{
+	cli();
+	if (!s_pending_timestamp)
+	{
+		time_get(s_last_pulse_time);
+		s_pending_timestamp = true;
+	}
+	sei();
+}
+
+ISR(INT0_vect)
 {
 	if (!s_pending_timestamp)
 	{

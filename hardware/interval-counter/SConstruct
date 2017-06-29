@@ -1,0 +1,87 @@
+import os
+
+arduino_path = "/opt/bin/arduino-1.8.3/hardware/arduino/avr/"
+library_path = os.path.expanduser("~/code/Libs/")
+
+cpppath = [
+    ".",
+    arduino_path + "cores/arduino",
+    arduino_path + "variants/standard",
+    arduino_path + "libraries/Wire/src",
+    library_path,
+    library_path + "generics/ringbuf",
+    library_path + "common",
+    library_path + "AVR",
+    library_path + "utility",
+    library_path + "utility/check-and-clear"
+]
+
+cppflags = ["-Wall", "-Wextra", "-Werror", "-Wundef", "-Wswitch-enum", "-pedantic", "-g", "-Os", "-std=gnu++11", '-fno-exceptions']
+
+cppincludes = []
+cppdefines = ['-DI2C_MT', '-DF_CPU=16000000L']
+
+application_paths = [
+	"buffer.cpp",
+	"interval-counter.cpp",
+	"interval.cpp",
+	"rtc.cpp",
+	"time.cpp",
+	"serial.cpp",
+    library_path + "common/lib_i2c.c",
+    library_path + "common/lib_i2c_mt.c",
+    library_path + "common/lib_i2c_mr.c",
+    library_path + "AVR/lib_i2c.c",
+	library_path + "utility/check-and-clear/check-and-clear.cpp",
+    library_path + "generics/ringbuf/ringbuf.cpp"
+]
+
+def setup_avr_environment(env, mmcu):
+    env.Replace(CC="avr-g++")
+    env.Replace(CXX="avr-g++")
+    env.Replace(OBJCOPY="avr-objcopy")
+    env.Replace(SIZE="avr-size")
+
+    env.Append(CPPFLAGS='-mmcu={}'.format(mmcu))
+    env.Append(SIZEFLAGS='--mcu={}'.format(mmcu))
+
+    env["MMCU"] = mmcu
+
+def _get_elf_builder():
+    return Builder(action = "$CC -mmcu=${MMCU} -Wl,-Map=${TARGET}.map -Os -Xlinker -Map=${TARGET}.map -o ${TARGET} ${SOURCES}")
+    
+def _get_hex_builder():
+    return Builder(action = "$OBJCOPY -j .text -j .data -O ihex $SOURCES $TARGET") 
+
+def _get_eep_builder():
+    return Builder(action = "$OBJCOPY -j .eeprom --change-section-lma .eeprom=0 -O ihex $SOURCES $TARGET") 
+
+env = Environment(ENV=os.environ, CPPPATH=cpppath, CPPFLAGS=cppflags, CPPDEFINES=cppdefines)
+
+setup_avr_environment(env, "atmega328p")
+
+env.Append(BUILDERS = {
+       'Elf': _get_elf_builder(),
+       'Hex': _get_hex_builder(),
+       'Eep' : _get_eep_builder()
+    })
+
+hex_name = "interval-counter.hex"
+elf_name = "interval-counter.elf"
+elf_sources = env.Object(application_paths)
+
+elf_output = env.Elf(elf_name, elf_sources) 
+hex_output = env.Hex(hex_name, elf_name)
+size_output = env.Command(target=None, source=elf_name, action="$SIZE -C --mcu=atmega328p $SOURCE")
+
+env.Depends(hex_output, elf_name)
+
+if "upload" in COMMAND_LINE_TARGETS:
+
+    AddOption("--port")
+    env["PORT"] = GetOption("port")
+
+    uploader = env.Command(
+    	target="upload",
+    	source=hex_name,
+        action="avrdude -P ${PORT} -b 57600 -c arduino -p m328p -U flash:w:${SOURCE}")
