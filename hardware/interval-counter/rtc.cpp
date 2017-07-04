@@ -1,4 +1,5 @@
 #include <avr/io.h>
+#include <avr/interrupt.h>
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -16,20 +17,16 @@ static I2C_TRANSFER_DATA s_transfer_data;
 
 void rtc_setup()
 {
-	//// Configure for 32768Hz output
+	// Configure for 1Hz output
 	s_transfer_data.address = DS1307_I2C_ADDRESS;
 	s_transfer_data.buffer = s_tx_buffer;
 	s_transfer_data.totalBytes = 2;
 
-	PORTB |= (1 << 5);
-	s_tx_buffer[0] = 0x07; s_tx_buffer[1] = 0x13;
+	s_tx_buffer[0] = 0x07; s_tx_buffer[1] = 0x10;
 	I2C_StartMaster(&s_transfer_data, false, false);
 	while(I2C_IsActive()) { I2C_Task(); }
 
 	s_tx_buffer[0] = 0x00; s_tx_buffer[1] = 0x00;
 	I2C_StartMaster(&s_transfer_data, false, false);
 	while(I2C_IsActive()) { I2C_Task(); }
-
-	PORTB &= ~(1 << 5);
 }
-
