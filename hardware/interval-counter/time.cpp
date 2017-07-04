@@ -4,6 +4,11 @@
 
 static TIME s_time = {0,0,0,0};
 
+static const uint16_t FTARGET = 1000;
+static const uint16_t TOP = F_CPU / (uint32_t)FTARGET;
+
+static bool* sp_ms_flag = NULL;
+
 static void time_add_h(TIME& time, uint16_t h)
 {
 	time.h += h;
@@ -43,6 +48,25 @@ static void time_add_ms(TIME& time, uint16_t ms)
 	}
 }
 
+static void time_tick()
+{
+	time_add_ms(s_time, 1);
+	*sp_ms_flag = true;
+}
+ 
+void time_setup(bool& ms_flag)
+{
+	sp_ms_flag = &ms_flag;
+	OCR1A = TOP;
+}
+
+void time_enable_interrupts()
+{
+	TCCR1B |= (1 << WGM12);
+	TCCR1B |= (1 << CS10);
+	TIMSK1 |= (1 << OCIE1A);
+}
+
 void time_set(TIME& time)
 {
 	s_time.h = time.h;
@@ -64,7 +88,12 @@ void time_print(TIME& time, char * buf)
 	sprintf(buf, "%02d:%02d:%02d.%03d\n", time.h, time.m, time.s, time.ms);
 }
 
-void time_tick()
+ISR(INT1_vect)
 {
-	time_add_ms(s_time, 1);
+	TCNT1 = 0;
+}
+
+ISR(TIMER1_COMPA_vect)
+{
+	time_tick();
 }

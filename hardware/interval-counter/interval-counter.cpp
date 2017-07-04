@@ -171,10 +171,12 @@ int main()
 	sei();
 	
 	interval_init();
+	time_setup(s_ms_tick_flag);
 	rtc_setup();
 
 	serial_enable_interrupts(true);
 	external_interrupt_enable();
+	time_enable_interrupts();
 
 	serial_write("RDY\n");
 
@@ -190,7 +192,6 @@ int main()
 		}
 
 		interval_tick();
-		time_tick();
 
 		if (check_and_clear(s_ms_tick_flag))
 		{
