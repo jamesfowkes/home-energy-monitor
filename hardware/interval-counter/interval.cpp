@@ -13,7 +13,7 @@ static RingBuffer<char[16]> s_interval_buffer(s_intervals, 16, true);
 static TIME s_last_pulse_time;
 static bool s_pending_timestamp = false;
 
-void interval_init()
+void interval_setup()
 {
 }
 

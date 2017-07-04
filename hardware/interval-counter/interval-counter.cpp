@@ -169,6 +169,7 @@ int main()
 	sei();
 	
 	time_setup(s_ms_tick_flag);
+	interval_setup();
 	rtc_setup();
 
 	serial_enable_interrupts(true);

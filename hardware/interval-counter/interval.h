@@ -1,7 +1,7 @@
 #ifndef _INTERVAL_H_
 #define _INTERVAL_H_
 
-void interval_init();
+void interval_setup();
 bool interval_fifo_pop(char * buf);
 uint8_t interval_fifo_count();
 void interval_trigger_pulse();
