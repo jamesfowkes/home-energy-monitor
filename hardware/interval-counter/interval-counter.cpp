@@ -166,11 +166,8 @@ int main()
 
 	serial_setup(s_rx_serial_buffer, SERIAL_BUFFER_SIZE, (bool&)s_rx_flag, (bool&)s_tx_complete);
 
-	cancel_all_timers();
-
 	sei();
 	
-	interval_init();
 	time_setup(s_ms_tick_flag);
 	rtc_setup();
 
@@ -198,9 +195,4 @@ int main()
 			heartbeat_ms_tick();
 		}
 	}
-}
-
-ISR(INT1_vect)
-{
-
 }
