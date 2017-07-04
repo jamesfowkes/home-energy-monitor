@@ -16,9 +16,6 @@ static I2C_TRANSFER_DATA s_transfer_data;
 
 void rtc_setup()
 {
-	I2C_SetPrescaler(64);
-	I2C_Init(NULL);
-
 	//// Configure for 32768Hz output
 	s_transfer_data.address = DS1307_I2C_ADDRESS;
 	s_transfer_data.buffer = s_tx_buffer;

@@ -6,6 +6,9 @@
 #include "check-and-clear.h"
 #include "counters.h"
 
+#include "lib_i2c_common.h"
+#include "lib_i2c_config.h"
+
 #include "ringbuf.h"
 #include "interval.h"
 #include "buffer.h"
@@ -146,6 +149,10 @@ static void setup_io()
 {
 	PORTD |= (1 << 2);
 	DDRB |= (1 << 5);
+
+	I2C_SetPrescaler(64);
+	I2C_Init(NULL);
+}
 }
 
 int main()
