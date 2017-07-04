@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 #include "check-and-clear.h"
+#include "counters.h"
 
 #include "ringbuf.h"
 #include "interval.h"
@@ -20,7 +21,7 @@ static volatile bool s_tx_complete = false;
 static char s_rx_serial_buffer[SERIAL_BUFFER_SIZE];
 static volatile bool s_rx_flag = false;
 
-//static SerialBuffer s_rx_buffer(s_rx_chars, 0, 16);
+static bool s_ms_tick_flag;
 
 static void send_next_interval()
 {
@@ -131,39 +132,14 @@ static bool command_is_pending(SerialBuffer& rx_serial_buffer)
 	return rx_serial_buffer.last() == '\n';
 }
 
-//static bool s_heartbeat_led = false;
-//static void heartbeat_task_fn(TaskAction * task)
-//{
-//	digitalWrite(13, s_heartbeat_led = !s_heartbeat_led);
-//}
-//static TaskAction s_heartbeat_task(heartbeat_task_fn, 500, INFINITE_TICKS);
+static uint16_t s_heartbeat_timer = 500;
 
-static void cancel_all_timers()
+static void heartbeat_ms_tick()
 {
-	OCR2B = 0;
-	OCR2A = 0;
-	TCNT2 = 0;
-	TCCR2B = 0;
-	TCCR2A = 0;
-
-	OCR1BH = 0;
-	OCR1BL = 0;
-	OCR1AH = 0;
-	OCR1AL = 0;
-	ICR1H = 0;
-	ICR1L = 0;
-	TCNT1H = 0;
-	TCNT1L = 0;
-
-	TCCR1C = 0;
-	TCCR1B = 0;
-	TCCR1A = 0;
-
-	OCR0B = 0;
-	OCR0A = 0;
-	TCNT0 = 0;
-	TCCR0B = 0;
-	TCCR0A = 0;
+	if (decrement_reset_at_zero(s_heartbeat_timer, 500U))
+	{
+		PINB |= (1<<5);
+	}
 }
 
 static void setup_io()
@@ -203,7 +179,10 @@ int main()
 		interval_tick();
 		time_tick();
 
-		//s_heartbeat_task.tick();
+		if (check_and_clear(s_ms_tick_flag))
+		{
+			heartbeat_ms_tick();
+		}
 	}
 }
 

@@ -13,7 +13,8 @@ cpppath = [
     library_path + "common",
     library_path + "AVR",
     library_path + "utility",
-    library_path + "utility/check-and-clear"
+    library_path + "utility/check-and-clear",
+    library_path + "utility/counters"
 ]
 
 cppflags = ["-Wall", "-Wextra", "-Werror", "-Wundef", "-Wswitch-enum", "-pedantic", "-g", "-Os", "-std=gnu++11", '-fno-exceptions']
