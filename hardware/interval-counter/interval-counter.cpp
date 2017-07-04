@@ -33,7 +33,7 @@ static void send_next_interval()
 	}
 	else
 	{
-		serial_write("--");
+		serial_write("--\n");
 	}
 }
 
@@ -115,11 +115,11 @@ static void handle_command(char * rx_serial_buffer)
 	case '!':
 		if (handle_setting(rx_serial_buffer))
 		{
-			serial_write("OK");
+			serial_write("OK\n");
 		}
 		else
 		{
-			serial_write("NOK");
+			serial_write("NOK\n");
 		}
 		break;
 	default:
@@ -163,7 +163,7 @@ int main()
 
 	serial_enable_interrupts(true);
 
-	serial_write("RDY");
+	serial_write("RDY\n");
 
 	while(true)
 	{

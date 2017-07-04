@@ -61,7 +61,7 @@ void time_get(TIME& time)
 
 void time_print(TIME& time, char * buf)
 {
-	sprintf(buf, "%02d:%02d:%02d.%03d", time.h, time.m, time.s, time.ms);
+	sprintf(buf, "%02d:%02d:%02d.%03d\n", time.h, time.m, time.s, time.ms);
 }
 
 void time_tick()
