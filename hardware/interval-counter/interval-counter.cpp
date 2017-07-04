@@ -153,6 +153,11 @@ static void setup_io()
 	I2C_SetPrescaler(64);
 	I2C_Init(NULL);
 }
+
+static void external_interrupt_enable()
+{
+	EIMSK = (1 << INT1) | (1 << INT0);
+	EICRA = (1 << ISC11);
 }
 
 int main()
@@ -169,6 +174,7 @@ int main()
 	rtc_setup();
 
 	serial_enable_interrupts(true);
+	external_interrupt_enable();
 
 	serial_write("RDY\n");
 
