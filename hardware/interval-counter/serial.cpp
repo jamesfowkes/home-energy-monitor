@@ -51,10 +51,10 @@ static char s_local_format_buffer[32];
  * Private Module Functions
  */
 
-static void serial_write(char const * const buffer, int n)
+static void private_serial_write(char const * const buffer, int n)
 {
 	s_transmit_index = 0;
-	
+
 	if (n > TX_BUFFER_SIZE)
 	{
 		s_transmit_length = TX_BUFFER_SIZE;
@@ -79,48 +79,48 @@ static void serial_write(char const * const buffer, int n)
 
 void serial_write(char * p)
 {
-	serial_write(p, strlen(p));
+	private_serial_write(p, strlen(p));
 }
 
 void serial_write(char const * p)
 {
-	serial_write(p, strlen(p));
+	private_serial_write(p, strlen(p));
 }
 
 void serial_write(char c)
 {
 	sprintf(s_local_format_buffer, "%c", c);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(unsigned char c)
 {
 	sprintf(s_local_format_buffer, "%c", c);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(int16_t i16)
 {
 	sprintf(s_local_format_buffer, "%d", i16);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(uint16_t u16)
 {
 	sprintf(s_local_format_buffer, "%u", u16);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(int32_t i32)
 {
 	sprintf(s_local_format_buffer, "%ld", i32);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(uint32_t u32)
 {
 	sprintf(s_local_format_buffer, "%lu", u32);
-	serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
+	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_enable_interrupts(bool enable)
@@ -157,6 +157,7 @@ SerialBuffer& serial_buffer()
 
 ISR(USART_RX_vect)
 {
+	
 	s_rx_buffer.add_to_buffer((char)UDR0);
 	*sp_rx_flag = true;
 }
