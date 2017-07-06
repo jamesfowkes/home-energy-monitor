@@ -9,7 +9,7 @@ static const uint16_t TOP = F_CPU / (uint32_t)FTARGET;
 
 static bool* sp_ms_flag = NULL;
 
-static void time_add_h(TIME& time, uint16_t h)
+static __inline__ void time_add_h(TIME& time, uint16_t h)
 {
 	time.h += h;
 	while (time.h > 23)
@@ -18,7 +18,7 @@ static void time_add_h(TIME& time, uint16_t h)
 	}
 }
 
-static void time_add_m(TIME& time, uint16_t m)
+static __inline__ void time_add_m(TIME& time, uint16_t m)
 {
 	time.m += m;
 	while (time.m > 59)
@@ -28,7 +28,7 @@ static void time_add_m(TIME& time, uint16_t m)
 	}
 }
 
-static void time_add_s(TIME& time, uint16_t s)
+static __inline__ void time_add_s(TIME& time, uint16_t s)
 {
 	time.s += s;
 	while (time.s > 59)
@@ -38,7 +38,7 @@ static void time_add_s(TIME& time, uint16_t s)
 	}
 }
 
-static void time_add_ms(TIME& time, uint16_t ms)
+static __inline__ void time_add_ms(TIME& time, uint16_t ms)
 {
 	time.ms += ms;
 	while (time.ms > 999U)
@@ -46,12 +46,6 @@ static void time_add_ms(TIME& time, uint16_t ms)
 		time.ms -= 1000U;
 		time_add_s(time, 1);
 	}
-}
-
-static void time_tick()
-{
-	time_add_ms(s_time, 1);
-	*sp_ms_flag = true;
 }
  
 void time_setup(bool& ms_flag)
@@ -85,6 +79,7 @@ void time_get(TIME& time)
 
 void time_print(TIME& time, char * buf)
 {
+	(void)time;
 	sprintf(buf, "%02d:%02d:%02d.%03d\n", time.h, time.m, time.s, time.ms);
 }
 
@@ -95,5 +90,6 @@ ISR(INT1_vect)
 
 ISR(TIMER1_COMPA_vect)
 {
-	time_tick();
+	time_add_ms(s_time, 1);
+	*sp_ms_flag = true;
 }
