@@ -20,16 +20,16 @@ void interval_setup()
 bool interval_fifo_pop(char * buf)
 {
 	char interval[16];
-	if (s_interval_buffer.pop_front(interval)) { return false; }
+	if (!s_interval_buffer.pop_front(interval)) { return false; }
 
 	strncpy(buf, interval, 16);
 
 	return true;
 }
 
-uint8_t interval_fifo_count()
+uint16_t interval_fifo_count()
 {
-	return s_interval_buffer.count();
+	return (uint16_t)s_interval_buffer.count();
 }
 
 void interval_tick()

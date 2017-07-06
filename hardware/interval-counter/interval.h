@@ -3,7 +3,7 @@
 
 void interval_setup();
 bool interval_fifo_pop(char * buf);
-uint8_t interval_fifo_count();
+uint16_t interval_fifo_count();
 void interval_trigger_pulse();
 void interval_tick();
 
