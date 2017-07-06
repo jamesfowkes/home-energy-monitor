@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
     set_initial_timestamp(interface)
 
-    #run_timestamp_tests(interface, test_logger)
+    run_timestamp_tests(interface, test_logger)
 
     run_clock_divergence_test(interface, test_logger)
 
