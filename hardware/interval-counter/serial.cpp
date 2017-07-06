@@ -73,52 +73,65 @@ static void private_serial_write(char const * const buffer, int n)
 	sei();
 }
 
+static void clear_buffer(char * buffer, uint8_t size)
+{
+	memset(buffer, 0, size);
+}
+
 /*
  * Public Module Functions
  */
 
 void serial_write(char * p)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	private_serial_write(p, strlen(p));
 }
 
 void serial_write(char const * p)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	private_serial_write(p, strlen(p));
 }
 
 void serial_write(char c)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%c", c);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(unsigned char c)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%c", c);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(int16_t i16)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%d", i16);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(uint16_t u16)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%u", u16);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(int32_t i32)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%ld", i32);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
 
 void serial_write(uint32_t u32)
 {
+	clear_buffer(s_local_format_buffer, 32);
 	sprintf(s_local_format_buffer, "%lu", u32);
 	private_serial_write(s_local_format_buffer, strlen(s_local_format_buffer));
 }
